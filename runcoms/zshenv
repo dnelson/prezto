@@ -10,6 +10,11 @@ if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
+# synced env
+if [ -f "${HOME}/.myenv" ]; then
+  source "${HOME}/.myenv"
+fi
+
 # aliases (synced)
 if [ -f "${HOME}/.aliases" ]; then
   source "${HOME}/.aliases"

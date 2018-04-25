@@ -92,6 +92,3 @@ bindkey -M vicmd "q" push-line
 
 # it's like, space AND completion.  Gnarlbot.
 bindkey -M viins ' ' magic-space
-
-
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
